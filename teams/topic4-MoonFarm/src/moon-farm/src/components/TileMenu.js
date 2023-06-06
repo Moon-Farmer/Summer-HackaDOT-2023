@@ -50,10 +50,17 @@ export const TileMenu = ({ sdk, signer, tile, id, onClose }) => {
     }
     const watering = async () => {
         //if has the auto-watering item -> reject
+<<<<<<< HEAD
         // const isEmpty = await checkLandisEmpty();
         // if(!isEmpty){
             setWatering(true);
         // }
+=======
+        const isEmpty = await checkLandisEmpty();
+        if(!isEmpty){
+            setWatering(true);
+        }
+>>>>>>> 96106bff792686a77d0fa1ea0a6f30a4d307768e
     }
     const ItemsShop = async () => {
         //pop up another items shop window
@@ -171,7 +178,11 @@ export const TileMenu = ({ sdk, signer, tile, id, onClose }) => {
                     </div>}
             </div>
 
+<<<<<<< HEAD
             {!(isPlanting || isWatering || isOpenItemShop || isShovel || isHarvest) && 
+=======
+            {!(isPlanting || isOpenItemShop || isShovel || isHarvest) && 
+>>>>>>> 96106bff792686a77d0fa1ea0a6f30a4d307768e
             <div className='button gp'>
             <button 
                 onClick={plant}

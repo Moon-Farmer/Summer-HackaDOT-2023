@@ -135,9 +135,6 @@ const GamePage = ({sdk, signer}) => {
             let hv_seed = false;
             let hv_tool_S = false;
             let hv_tool_W = false;
-            let seed_A = false;
-            let seed_B = false;
-            let seed_state = -1;
 
             //get lands children
             const args = {

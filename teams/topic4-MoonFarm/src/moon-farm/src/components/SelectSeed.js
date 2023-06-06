@@ -86,7 +86,10 @@ export const SelectSeed = ({sdk, signer, id}) => {
         const owner_sdk = createSdk(owner_account);
         const working_seed = await getSeedBalance();
         console.log('working',working_seed);
+<<<<<<< HEAD
         const s_address = signer.address;
+=======
+>>>>>>> 96106bff792686a77d0fa1ea0a6f30a4d307768e
         // console.log('seed A amount', working_seed.seedbalance[0]);
         // console.log('seed B amount', workingSeedB);
 
@@ -95,7 +98,11 @@ export const SelectSeed = ({sdk, signer, id}) => {
         console.log('query land id', land_token_id);
         if (type=='A') {
             const nested = await nestToken(owner_sdk, {
+<<<<<<< HEAD
                 address: s_address,
+=======
+                address: owner_address,
+>>>>>>> 96106bff792686a77d0fa1ea0a6f30a4d307768e
                 parent: {
                     collectionId: 1619,
                     tokenId: land_token_id,
@@ -144,8 +151,15 @@ export const SelectSeed = ({sdk, signer, id}) => {
         }else{
             //nest seed into land collection
 
+<<<<<<< HEAD
             const nested = await nestToken(owner_sdk, {
                 address: s_address,
+=======
+            // const s_address = signer.address;
+            // const s_sdk = createSdk(signer);
+            const nested = await nestToken(owner_sdk, {
+                address: owner_address,
+>>>>>>> 96106bff792686a77d0fa1ea0a6f30a4d307768e
                 parent: {
                     collectionId: 1619,
                     tokenId: land_token_id,
@@ -215,9 +229,14 @@ export const SelectSeed = ({sdk, signer, id}) => {
                     <div>
                         <h1>seed1</h1>
                         <button
+<<<<<<< HEAD
                             onClick={() => burnNmintNnest_seed('A')}
                             className="text-2xl mt-3 py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-amber-400 shadow-lg shadow-amber-400/50 text-white focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-600">
                                 Plant carrot
+=======
+                            onClick={() => burnNmintNnest_seed('A')}>
+                                Plant
+>>>>>>> 96106bff792686a77d0fa1ea0a6f30a4d307768e
                         </button>
                     </div>
                 }
@@ -227,9 +246,14 @@ export const SelectSeed = ({sdk, signer, id}) => {
                     <div>
                         <h1>seed2</h1>
                         <button
+<<<<<<< HEAD
                             onClick={() => burnNmintNnest_seed('B')}
                             className="text-2xl mt-3 py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-amber-400 shadow-lg shadow-amber-400/50 text-white focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-600">
                                 Plant strawberry
+=======
+                            onClick={() => burnNmintNnest_seed('B')}>
+                                Plant
+>>>>>>> 96106bff792686a77d0fa1ea0a6f30a4d307768e
                         </button>
                     </div>
                 }

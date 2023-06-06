@@ -62,8 +62,16 @@ export const Shovel_confirm = ({sdk, signer, id}) => {
         <>
         <div>
             <button
+<<<<<<< HEAD
                 onClick={confirm_destory}
                 className="text-2xl mt-3 py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-amber-400 shadow-lg shadow-amber-400/50 text-white focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 hover:-translate-y-1 hover:scale-110 hover:bg-amber-600">
+=======
+                onClick={onclose}>
+                    Cancel
+            </button>
+            <button
+                onClick={confirm_destory}>
+>>>>>>> 96106bff792686a77d0fa1ea0a6f30a4d307768e
                     Confirm
             </button>
         </div>
